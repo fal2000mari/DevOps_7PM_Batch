@@ -1,0 +1,9 @@
+node{
+    stage('build java project') {
+        git branch: 'main', url: 'https://github.com/fal2000mari/DevOps_7PM_Batch.git'
+        
+}
+ stage('build job') {
+    build(job: 'jobnew')
+  }
+}
